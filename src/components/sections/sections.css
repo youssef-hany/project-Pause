@@ -1,0 +1,66 @@
+.sectionLight{
+    background-color: #eceeef;
+    padding: 2rem;
+
+}
+
+button.moreBtn{
+   background-color: #620707;
+    color: #DCE39B;
+    display: block;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+div.buelogo{
+  margin-right: 50px;
+}
+button.btnTxt{
+  display:none;
+}
+.btn-wrapper{
+    margin-top: 20px;
+    
+}
+
+.sectionDark{
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+img.imgCenter{
+	
+
+	border-radius: 8px;
+	opacity: 0.6;
+	height: 330px;
+	
+}
+.logos{
+  margin-top: 30px;
+}
+.Pause{
+  border-radius: 50%;
+  max-width: 40%;
+  margin-right: 50px;
+}
+.moreBtn:hover{
+    color:#620707;
+		background-color: #D29696;
+  
+		opacity: 0.8;
+		
+}
+@media screen and (max-width: 500px){
+.secondTxt{
+    display:none;
+    
+  }
+button.joinM{
+    display:block;
+    margin:auto;
+  }
+button.btnTxt{
+  display:block;
+}
+}

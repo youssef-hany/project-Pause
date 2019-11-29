@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+	margin-top: 80px;
+  animation: Pause-logo-spin infinite 35s linear;
+	margin-bottom: 0;
+	margin-left: 80px;
+  height: 40vmin;
+	opacity:1;
+
+}
+.carouselC{
+	
+}
+
+.appName{
+	width: 50%;
+	object-fit: cover;
+	opacity:1;
+	max-height:90%;
+  max-width:100%; 
+
+}
+.imgTop{
+	object-fit: cover;
+	margin: 5%;
+	
+}
+
+.App-header {
+	position: relative;
+  background-image: linear-gradient(to top left, #4B0707, #620707);
+	opacity: 0.9;
+  max-height: 105vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  }
+.App-link {
+  color: #09d3ac;
+}
+button.arrowBtn{
+		
+    background-color : transparent;
+    border : 0;
+    outline-style : none;
+}
+
+.arrowimg{
+	
+	object-fit: cover; 
+
+	float: none;
+}
+
+
+
+
+
+@keyframes Pause-logo-spin {
+  from {
+        transform: rotate(0deg);
+    }
+
+  to {
+        transform: rotate(360deg);
+    }
+}

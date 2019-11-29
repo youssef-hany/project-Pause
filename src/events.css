@@ -1,0 +1,23 @@
+.event {
+	width: 20rem;
+	background: #3f469e;
+	opacity: 0.8;
+	z-index: 5;
+	color: silver;
+	margin: 25px;
+
+}
+
+.event.img {
+	max-height: 15rem;
+
+}
+
+.card {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+.innerWrap{
+	padding: 0;
+}

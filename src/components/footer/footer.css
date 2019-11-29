@@ -1,0 +1,40 @@
+footer.footer1{
+    background-color: #666;
+    
+   
+}
+
+footer.footer1 h4{
+    color: #ccc;
+    
+}
+
+footer.footer1 ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.footer1 ul li{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    
+}
+.footerimg{
+	margin-top: 10%;
+}
+footer.footcont{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.footerimg, .footertitle{
+  display: block;
+}
+.footercol{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.Pause1{
+  border-radius: 50%;
+}
