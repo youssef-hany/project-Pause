@@ -48,6 +48,7 @@ class Home extends Component {
 		if (scrolled > 100 && !this.state.scrolled){
     if(handleScroll()){
 				this.state.scrolled = true;
+				
 			 }
 	}
 		 

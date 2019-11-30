@@ -40,7 +40,8 @@ class NavBar extends Component {
       
       render(){
             return (
-                  <div id="navbar" className="cardS">
+							
+							 <div id="navbar" className="cardS">
                         <div className="card-block">
                               
                                
@@ -87,6 +88,8 @@ class NavBar extends Component {
                   
             
                   </div>
+								
+                 
             
             );
 				
