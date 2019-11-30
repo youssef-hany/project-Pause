@@ -9,7 +9,8 @@
 nav.navbar{
 	display: block;
   margin: auto;
-	
+	margin-left: 2px;
+
   
   
 }
@@ -22,7 +23,6 @@ nav.navbar{
   margin-top: 20px;
   margin-bottom: 20px;
 	overflow: hidden;
-
 	border-radius: 7px;
 	background-image: linear-gradient(to top left, #4B0707, #620707);
 }
@@ -37,17 +37,19 @@ nav.navbar{
   
 
   display: block;
- 	
 	overflow: hidden;
 	background-image: linear-gradient(to top left, #4B0707, #620707);
 	
-
 }
 
 .btn-nav{
+	
 	background-color: transparent;
 	border-color: transparent;
 	
+	margin-right: 20px;
+	
+
 }
 
 .scrolled{

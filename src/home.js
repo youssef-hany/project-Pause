@@ -45,9 +45,9 @@ class Home extends Component {
 		
 	const scrolled = window.scrollY;    
    try{	
-		if (scrolled > 100 && !Scrolled){
-    if("a"){
-				Scrolled = true;
+		if (scrolled > 100 && !this.state.scrolled){
+    if(handleScroll()){
+				this.state.scrolled = true;
 			 }
 	}
 		 
