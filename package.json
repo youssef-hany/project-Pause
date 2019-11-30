@@ -1,6 +1,5 @@
 {
-
-"homepage": "https://youssef-hany.github.io/project-Pause",
+  "homepage": "http://youssef-hany.github.io/project-Pause",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -12,8 +11,8 @@
     "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
