@@ -34,7 +34,9 @@ html, body{
 }
 .imgTop{
 	object-fit: cover;
-	margin: 5%;
+	margin: 10%;
+	margin-top:0;
+
 	
 }
 
@@ -60,16 +62,30 @@ button.arrowBtn{
     outline-style : none;
 }
 
-.arrowimg{
-	
-	object-fit: cover; 
 
-	float: none;
+
+#arrowimg{
+	animation: jump 5s infinite;
+	margin: 0 auto;
+	position: relative;
+
+   
+
 }
+a {
+      content: '\f0a8';
+      font-family: 'FontAwesome';
+      transition: 2s ease-in-out;
+  }
+a:hover {
+		
+      opacity: 0.4;
+      transition: 1s ease-in-out;
+  }
 
-
-
-
+@keyframes jump {
+  0% { top: 0; } 50% { top: 50px; } 100% { top: 0; }
+}
 
 @keyframes Pause-logo-spin {
   from {

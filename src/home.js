@@ -92,7 +92,7 @@ class Home extends Component {
         	</div>
 						<div className="col-sm-12">
 						<img src={PauseName} className="appName img-fluid" alt="logo" />
-							   <div className="col-sm-12 ">
+							   <div id = "arrowimg" className="col-sm-12">
                     <button className="arrowBtn"><a onClick={executeScroll} className="arrowDown arrowimg"><img src={arrow} className="img-fluid arrowimg">
                       </img>
                       
