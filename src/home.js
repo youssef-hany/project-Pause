@@ -10,11 +10,13 @@ import NavBar from './components/navBar/navBar';
 import MainCarousel from './components/carousel/carousel';
 import Sections from './components/sections/sections';
 import JoinModal from './components/modals/joinModal';
-import {handleScroll, ref} from '../src/components/tools/scrollToDiv.js';
+import {handleScroll} from '../src/components/tools/scrollToDiv.js';
 import {executeScroll, reference} from '../src/components/tools/scroll2.js';
 import VideoModals from './components/modals/VideoModals';
-
 import Footer from './components/footer/footer';
+
+
+import AwesomeDebouncePromise from 'awesome-debounce-promise';
 
 
 //services
@@ -23,6 +25,7 @@ import HttpService from './components/tools/services/http-service'
 const http = new HttpService();
 //tools
 var Scrolled = false;
+
 
 class Home extends Component {
 	
@@ -43,11 +46,12 @@ class Home extends Component {
 		
 
 		
-	const scrolled = window.scrollY;    
+	const scrolled = window.scrollY;   
+		
    try{	
-		if (scrolled > 100 && !this.state.scrolled){
-    if(handleScroll()){
-				this.state.scrolled = true;
+		if (scrolled > 100 && !Scrolled){
+    if("a"){
+				Scrolled = true;
 				
 			 }
 	}
