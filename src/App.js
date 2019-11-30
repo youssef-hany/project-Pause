@@ -58,29 +58,11 @@ class App extends Component {
 				<div className="App">
 					
 						
-					<Route exact path="/" component={ Home } />
-					<Route exact path="/register" component={ Register } />
+					<Home />
 					      
 
 							
-					<div className="event-route-wrap">
-							<Route exact path="/events"  render={() =>
-										<div className="sectionDark innerWrap ">
-											<div className="evNav">
-													<EventNav/>
-												</div>
-											
-										<div className="container">
-												<div className="row">
-
-														{this.eventList()}
-
-												</div>		
-										</div>			
-										</div>
-							
-							} />
-					</div>
+					
 					
 					
 				
