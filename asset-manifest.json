@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/project-Pause/static/css/main.4635c748.chunk.css",
+    "main.css": "/project-Pause/static/css/main.11afe693.chunk.css",
     "main.js": "/project-Pause/static/js/main.8773b3dc.chunk.js",
     "main.js.map": "/project-Pause/static/js/main.8773b3dc.chunk.js.map",
     "runtime-main.js": "/project-Pause/static/js/runtime-main.b4eda3cb.js",
@@ -8,9 +8,9 @@
     "static/js/2.ed16ede5.chunk.js": "/project-Pause/static/js/2.ed16ede5.chunk.js",
     "static/js/2.ed16ede5.chunk.js.map": "/project-Pause/static/js/2.ed16ede5.chunk.js.map",
     "index.html": "/project-Pause/index.html",
-    "precache-manifest.075beba2b170be6502546098174d4365.js": "/project-Pause/precache-manifest.075beba2b170be6502546098174d4365.js",
+    "precache-manifest.74b620d398e459b8c95c94217df81c66.js": "/project-Pause/precache-manifest.74b620d398e459b8c95c94217df81c66.js",
     "service-worker.js": "/project-Pause/service-worker.js",
-    "static/css/main.4635c748.chunk.css.map": "/project-Pause/static/css/main.4635c748.chunk.css.map",
+    "static/css/main.11afe693.chunk.css.map": "/project-Pause/static/css/main.11afe693.chunk.css.map",
     "static/media/Pause1.jpg": "/project-Pause/static/media/Pause1.c230c5ae.jpg",
     "static/media/PauseLabel.png": "/project-Pause/static/media/PauseLabel.96b88801.png",
     "static/media/PauseName.png": "/project-Pause/static/media/PauseName.c43854a5.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.b4eda3cb.js",
     "static/js/2.ed16ede5.chunk.js",
-    "static/css/main.4635c748.chunk.css",
+    "static/css/main.11afe693.chunk.css",
     "static/js/main.8773b3dc.chunk.js"
   ]
 }
