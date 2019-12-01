@@ -3,6 +3,7 @@ html, body{
 	overflow: unset;
 	margin: 0;
 	-webkit-overflow-scrolling: touch; 
+	overflow-x: hidden;
 
 }
 .App {
@@ -34,7 +35,7 @@ html, body{
 }
 .imgTop{
 	object-fit: cover;
-	margin: 2%;
+	margin: 5%;
 	margin-top:0;
 
 	
@@ -101,7 +102,7 @@ a:hover {
     
   }
 	#arrowimg{
-		margin-top: 10%;
+		margin-top: 20%;
 	}
 	
 }
