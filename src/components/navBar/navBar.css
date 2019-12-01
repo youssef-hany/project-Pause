@@ -1,6 +1,6 @@
 /*for top-nav*/
 .card{
-	
+	margin: 5%;
   margin-top: 20px;
   margin-bottom: 20px;
 	display: block;
@@ -9,9 +9,8 @@
 nav.navbar{
 	display: block;
   margin: auto;
-	
   
-  
+  margin-left: 2%;
 }
 
 /*for Side NavBar*/
@@ -43,19 +42,35 @@ nav.navbar{
 	
 
 }
-
+.nav-item{
+	
+	margin: 0 10px 0 10px;
+}
 .btn-nav{
+	
 	background-color: transparent;
 	border-color: transparent;
 	
 }
+.login-Profile{
+	margin-left: %;
+}
 
 .scrolled{
-	width: 97%;
+	width: 94%;
+	display: block;
   position: fixed;
-  top: 0; /* required */
+	top: 0; /* required */
 	z-index: 6;
 	border-radius: 7px;
+
+	
+}
+
+@media screen and (max-width: 500px){
+	.scrolled{
+		width: 90%;
+	}
 	
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{

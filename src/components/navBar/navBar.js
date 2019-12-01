@@ -14,6 +14,12 @@ class NavBar extends Component {
 			};
   }
 	
+	logOut(e){
+		e.preventDefault();
+		localStorage.removeItem('usertoken');
+		this.props.history.push('/');
+	}
+	
 	
 	
 	componentDidMount(){
@@ -39,6 +45,18 @@ class NavBar extends Component {
 	}
       
       render(){
+				const loginLink = (	<li className="nav-item">
+																				 <Link className="nav-link btn navbar-brand btn-nav" to ="/login">Login</Link>
+														</li>
+													);
+				const profileLink = (	<li className="nav-item">
+																				 <Link className="nav-link btn navbar-brand btn-nav" to ="/profile">Profile</Link>
+															</li>
+														
+														)
+				
+				
+				
             return (
 							
 							 <div id="navbar" className="cardS">
@@ -69,8 +87,12 @@ class NavBar extends Component {
                                        <li className="nav-item"> 
 																				 <a className="nav-link btn navbar-brand btn-nav" href="/contact">Contact Us</a></li>
                                      <li className="nav-item">
-																				 <a className="nav-link btn navbar-brand btn-nav" href="/register">Registration</a>
+																				 <Link className="nav-link btn navbar-brand btn-nav" to ="/register">Register</Link>
 																				 </li>
+																			<div className="login-Profile">
+																				{localStorage.usertoken ? profileLink : loginLink }
+																				</div>
+																				
                                       
 																			
 																			</ul>
