@@ -84,7 +84,7 @@ class Home extends Component {
     <div className="Home">
     
         <header  className="App-header">
-        <div className="container">
+        <div className="container-fluid">
 					<div className="row imgTop">
 					<div className="col-sm-12 PauseLogo ">
 					
@@ -110,7 +110,7 @@ class Home extends Component {
       
       
           
-      <div ref = {reference} className="container-fluid  App-main">
+      <div ref = {reference} className="App-main">
 							   
 				<div className="cont">
 				<NavBar />

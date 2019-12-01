@@ -21,9 +21,10 @@ nav.navbar{
   margin-top: 20px;
   margin-bottom: 20px;
 	overflow: hidden;
-
 	border-radius: 7px;
 	background-image: linear-gradient(to top left, #4B0707, #620707);
+	width: 100%;
+
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -34,7 +35,6 @@ nav.navbar{
 
 .navbarS{
   
-
   display: block;
  	
 	overflow: hidden;
@@ -52,12 +52,10 @@ nav.navbar{
 	border-color: transparent;
 	
 }
-.login-Profile{
-	margin-left: %;
-}
+
 
 .scrolled{
-	width: 94%;
+	width: 100%;
 	display: block;
   position: fixed;
 	top: 0; /* required */
