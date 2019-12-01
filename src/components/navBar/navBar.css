@@ -21,7 +21,6 @@ nav.navbar{
   margin-top: 20px;
   margin-bottom: 20px;
 	overflow: hidden;
-	border-radius: 7px;
 	background-image: linear-gradient(to top left, #4B0707, #620707);
 	width: 100%;
 
@@ -60,7 +59,6 @@ nav.navbar{
   position: fixed;
 	top: 0; /* required */
 	z-index: 6;
-	border-radius: 7px;
 
 	
 }
