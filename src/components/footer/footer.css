@@ -38,10 +38,3 @@ footer.footcont{
 .Pause1{
   border-radius: 50%;
 }
-
-@media screen and (max-width: 500px){
-	.row{
-		width: 50%;
-	}
-	
-}

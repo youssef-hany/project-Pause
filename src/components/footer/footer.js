@@ -33,11 +33,10 @@ class Footer extends Component {
         <div className="container-fluid footcont">
          
       
-					
-            <div className="row">
+            <div className="row rowfooter">
               
               
-               <div className="col-6  footercol">
+                <div className="col-sm-3 footercol">
                   
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,8 +49,9 @@ class Footer extends Component {
                       
                     </div>
                   </div>
-									</div>
-									<div className="col-6  footercol">
+                
+                </div>
+                <div className="col-sm-3 footercol">
                     
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,12 +64,10 @@ class Footer extends Component {
                       <a className="dropdown-item" href="#">Pause Paradox</a>
                     </div>
                   </div>
-                
-                </div>  
-               </div>
-					
-					<div className="row">
-						<div className="col-6  footercol">
+                      
+                       
+                </div>
+                <div className="col-sm-3 footercol">
                   
                     <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,7 +80,7 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 footercol">
+                <div className="col-sm-3 footercol">
                 
                   
                   <div className="dropdown">
@@ -99,11 +97,8 @@ class Footer extends Component {
                   </div>
                     
                 </div>
-					
-					</div>
-                
             
-            
+            </div>
         
         </div>
         
