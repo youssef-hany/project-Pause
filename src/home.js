@@ -82,18 +82,20 @@ class Home extends Component {
 		
         return (
     <div className="Home">
-    
+    	
         <header  className="App-header">
-        <div className="container-fluid">
+        	<h1 className="head-Seo">Pause Club Bue</h1>
+					<p className="head-Seo">This is a website for Pause Club in the British University in Egypt</p>
+					<div className="container-fluid">
 					<div className="row imgTop">
 					<div className="col-sm-12 PauseLogo ">
 					
-						<img src={PauseLabel} className="App-logo img-fluid" alt="logo" />
+						<img src={PauseLabel} className="App-logo img-fluid" alt="Pause Logo Spinning" />
         	</div>
 						<div className="col-sm-12">
-						<img src={PauseName} className="appName img-fluid" alt="logo" />
-							   <div id = "arrowimg" className="col-sm-12">
-                    <button className="arrowBtn"><a onClick={executeScroll} className="arrowDown arrowimg"><img src={arrow} className="img-fluid arrowimg">
+						<img src={PauseName} className="appName img-fluid" alt="Pause Name" />
+							   <div onMouseOver={executeScroll} id = "arrowimg" className="col-sm-12">
+                    <button className="arrowBtn"><a title="Anchor to drag the page down" className="arrowDown arrowimg"><img src={arrow} className="img-fluid arrowimg">
                       </img>
                       
                      </a>

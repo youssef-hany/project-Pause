@@ -85,7 +85,7 @@ class NavBar extends Component {
 																		 <a className="nav-link btn  navbar-brand btn-nav" href="/shop">Pause Shop</a>
 																				 </li>
                                        <li className="nav-item"> 
-																				 <a className="nav-link btn navbar-brand btn-nav" href="/contact">Contact Us</a></li>
+																				 <Link className="nav-link btn navbar-brand btn-nav" to="/contact">Contact Us</Link></li>
                                      <li className="nav-item">
 																				 <Link className="nav-link btn navbar-brand btn-nav" to ="/register">Register</Link>
 																				 </li>

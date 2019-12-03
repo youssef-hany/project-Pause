@@ -30,7 +30,7 @@ class events extends Component{
 			<div className="row">
                    
 								<div className="card event">
-									<img className="card-img-top" src={pause} alt="Event"></img>
+									<img className="card-img-top" src={pause} alt="Event Picture"></img>
 									<div className="card-block">
 										<h4 className="card-title">{this.props.name}</h4>
 										<p className="card-text">{this.props.number}</p>

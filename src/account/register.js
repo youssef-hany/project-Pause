@@ -59,6 +59,7 @@ class Register extends Component {
 					<form noValidate onSubmit={this.onSubmit} >
 						<div className="form-group">
 							<label htmlFor="name">Name</label>
+							
 							<input name="name" value={this.state.name} onChange={this.onChange} type="text" className="form-control name" id="name" placeholder="What's your name?"></input>
 						</div>
 						<div className="form-group">
@@ -66,6 +67,7 @@ class Register extends Component {
 							<input name="id" value={this.state.id} onChange={this.onChange} type="number" className="form-control id" id="id" placeholder="123456.."></input>
 						</div>
 						<div className="form-group">
+							
 							<label htmlFor="userName">User Name</label>
 							<input name="userName" value={this.state.userName} onChange={this.onChange} type="text" className="form-control userName" id="userName" placeholder="User Name"></input>
 						</div>

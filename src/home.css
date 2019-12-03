@@ -11,7 +11,9 @@ html, body{
 	 
 
 }
-
+.head-Seo{
+	display: none;
+}
 .App-logo {
 	margin-top: 80px;
   animation: Pause-logo-spin infinite 35s linear;
