@@ -1,69 +1,121 @@
 /*for top-nav*/
-.card{
+.card {
 	margin: 5%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: block;
+	
+}
+
+nav.navbar {
+	display: block;
+	margin: auto;
+
 
 }
-nav.navbar{
-	display: block;
-  margin: auto;
-  
-  
+
+.PauseTnav {
+	display: none;
+}
+
+.MobProfile {
+	display: none;
 }
 
 /*for Side NavBar*/
-.cardS{
+.cardS {
 	margin: auto;
 	display: block;
 	text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	overflow: hidden;
 	background-image: linear-gradient(to top left, #4B0707, #620707);
 	width: 100%;
 
 }
 
-.navbar-dark .navbar-nav .nav-link{
-	color: #DCE39B;
+.navbar-dark .navbar-nav .nav-link {
 	
+	color: #DCE39B;
+
 }
 
 
-.navbarS{
-  
-  display: block;
- 	
+.navbarS {
+
+	display: block;
 	overflow: hidden;
 	background-image: linear-gradient(to top left, #4B0707, #620707);
-	
+
 
 }
-.nav-item{
-	
-	margin: 0 10px 0 10px;
+
+.nav-item {
+
+	margin: 0 10px 0 58px;
+
 }
-.btn-nav{
-	
+
+.btn-nav {
+	border: 0;
 	background-color: transparent;
 	border-color: transparent;
-	
+
 }
 
 
-.scrolled{
+.scrolled {
 	width: 100%;
 	display: block;
-  position: fixed;
-	top: 0; /* required */
+	position: fixed;
+	top: 0;
+	/* required */
 	z-index: 6;
+
+
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #620707;
+	background-color: #D29696;
+	opacity: 0.8;
+}
+@media screen and (max-width: 1350px) {
+	.nav-item {
+
+	margin: 0 10px 0 30px;
+
+}
 
 	
 }
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-	 color:#620707;
-		background-color: #D29696;
-		opacity: 0.8;
-} 
+@media screen and (max-width: 1250px) {
+	.nav-item {
+
+	margin: 0 10px 0 20px;
+
+}
+}
+
+@media screen and (max-width: 992px) {
+	.MobProfile {
+		display: block;
+	}
+	.login-Profile{
+		display: none;
+	}
+	.PauseTcont{
+		margin: auto;
+	}
+	.navImg{
+		margin-left: 80px;
+		max-width: 80px;
+	}
+	.PauseTnav {
+		color: #DCE39B;
+		display: block;
+		
+	}
+}

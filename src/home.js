@@ -95,8 +95,7 @@ class Home extends Component {
 						<div className="col-sm-12">
 						<img src={PauseName} className="appName img-fluid" alt="Pause Name" />
 							   <div onMouseOver={executeScroll} id = "arrowimg" className="col-sm-12">
-                    <button className="arrowBtn"><a title="Anchor to drag the page down" className="arrowDown arrowimg"><img src={arrow} className="img-fluid arrowimg">
-                      </img>
+                    <button className="arrowBtn"><a title="Anchor to drag the page down" className="arrowDown arrowimg"><div className="arrow"></div>
                       
                      </a>
 									 </button>

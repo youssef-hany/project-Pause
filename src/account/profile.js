@@ -5,6 +5,7 @@ class Profile extends Component {
 
 	constructor(){
 		super();
+	
 		this.state = {
 			name: '',
 			id: '',
@@ -20,9 +21,15 @@ class Profile extends Component {
 		};
 
 	}
+	
+
 
 	
 	componentDidMount(){
+		
+		
+		
+		
 		const token = localStorage.usertoken;
 		const decoded = jwt.verify(token, secret);
 		console.log(decoded);
@@ -40,6 +47,8 @@ class Profile extends Component {
 		})
 		
 	}
+	
+	
 	render(){
 		
 		return(

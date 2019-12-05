@@ -1,4 +1,7 @@
 import axios from 'axios';
+import jwt from 'jsonwebtoken';
+
+const secret = 'secret';
 
 export const register = newUser => {
 	return axios.post('http://localhost:3004/users/register',{
@@ -11,7 +14,7 @@ export const register = newUser => {
 			faculty: newUser.faculty,
 			major: newUser.major,
 			year: newUser.year,
-			department: newUser.department
+			department: newUser.department,
 	}).then(response => {
 		console.log('Registered ' + newUser.email);
 	});
@@ -21,7 +24,7 @@ export const register = newUser => {
 export const login = user => {
 	return axios.post('http://localhost:3004/users/login', {
 		email: user.email,
-		password: user.password		
+		password: user.password
 	}).then(response => {
 		localStorage.setItem('usertoken', response.data);
 		return response.data;
@@ -29,5 +32,6 @@ export const login = user => {
 	}).catch(err => {
 		console.log(err);
 	});
+
 	
 };
