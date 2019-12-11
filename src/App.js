@@ -59,11 +59,9 @@ class App extends Component {
 			return(
 				<div className="App">
 					
-					<Switch>
-					<Route exact path="/" component={ Home } />
-					<Route exact path="/register" component={ Register } />
-					<Route exact path="/login" component={ login } />
-					<Route exact path="/profile" component={ Profile } />
+					
+					< Home />
+					
 						<div className="event-route-wrap">
 							<Route exact path="/events"  render={() =>
 										<div className="sectionDark innerWrap ">
