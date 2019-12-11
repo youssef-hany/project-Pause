@@ -8,10 +8,12 @@ import ScrollToTop from './components/tools/Route-ScrollToTop';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-	
+	<BrowserRouter>
+		
 				<ScrollToTop />
 				<App />	
-
+	
+	</BrowserRouter>
 	, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
