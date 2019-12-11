@@ -1,27 +1,39 @@
 import axios from 'axios';
-import jwt from 'jsonwebtoken';
 
-const secret = 'secret';
 
-export const register = newUser => {
+export const register = (newUser) => {
 	return axios.post('http://localhost:3004/users/register',{
-			name: newUser.name,
-			id: newUser.id,
-			userName: newUser.userName,
-			phone: newUser.phone,
-			email: newUser.email,
-			password: newUser.password ,	
-			faculty: newUser.faculty,
-			major: newUser.major,
-			year: newUser.year,
-			department: newUser.department,
+			user:
+						{
+							name: newUser.user.name,
+							id: newUser.user.id,
+							userName: newUser.user.userName,
+							phone: newUser.user.phone,
+							email: newUser.user.email,
+							password: newUser.user.password ,	
+							faculty: newUser.user.faculty,
+							major: newUser.user.major,
+							year: newUser.user.year,
+							department: newUser.user.department,
+						}
 	}).then(response => {
-		console.log('Registered ' + newUser.email);
+		
 	});
 	
 };
 
-export const login = user => {
+export const announcement = (userData) => {
+	return axios.post('http://localhost:3004/users/profile/announce', {
+	 	email: userData.email,
+		title: userData.title,
+		message: userData.message,
+		privilige: userData.priviliges
+		
+	})
+	
+}
+
+export const login = (user) => {
 	return axios.post('http://localhost:3004/users/login', {
 		email: user.email,
 		password: user.password

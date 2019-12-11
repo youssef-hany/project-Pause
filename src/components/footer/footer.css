@@ -38,3 +38,16 @@ footer.footcont{
 .Pause1{
   border-radius: 50%;
 }
+.socialMedia{
+  margin-top: 100px;
+}
+.social-fb{
+  margin: 15px;
+}
+.social-tw{
+  margin: 15px;
+}
+.social-in{
+  width: 300px;
+  margin: 15px;
+}

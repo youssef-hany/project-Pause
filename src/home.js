@@ -13,16 +13,18 @@ import JoinModal from './components/modals/joinModal';
 import {handleScroll} from '../src/components/tools/scrollToDiv.js';
 import {executeScroll, reference} from '../src/components/tools/scroll2.js';
 import VideoModals from './components/modals/VideoModals';
+import Announcement from './components/announcement/announcement';
 import Footer from './components/footer/footer';
-
-
 import AwesomeDebouncePromise from 'awesome-debounce-promise';
 
 
 //services
+import {isAuthenticated} from './account/authenticated'
 import HttpService from './components/tools/services/http-service'
 
 const http = new HttpService();
+const token = localStorage.getItem('usertoken');
+
 //tools
 var Scrolled = false;
 
@@ -40,12 +42,10 @@ class Home extends Component {
   }
 
 	
-	
-	
-	Listener = window.addEventListener('scroll', () => {
+	componentDidMount(){
+		window.addEventListener('scroll', () => {
 		
 
-		
 	const scrolled = window.scrollY;   
 		
    try{	
@@ -63,8 +63,10 @@ class Home extends Component {
 		
 		
    });
-
-
+		
+	
+	}
+	
 
 	
 	loadData= () => {
@@ -78,6 +80,7 @@ class Home extends Component {
 	
   render(){
 
+			const auth = isAuthenticated(token); 
 
 		
         return (
@@ -121,10 +124,12 @@ class Home extends Component {
                   <div className="container">    
                    
                       <MainCarousel /> 
+												
                  	</div>
+				
          <React.Fragment>
-         
-           <Sections />
+					 {auth ? <Announcement /> : <div></div>}
+					 <Sections />
            <JoinModal />
            <VideoModals />
            <Footer />

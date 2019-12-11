@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './footer.css';
 import Pause from "../img/Pause1.jpg";
-
+import facebook from '../img/facebook.png';
+import twitter from '../img/twitter.png';
+import instagram from '../img/instagram.png';
 import Xmark from "../img/x-mark.png";
 
 class Footer extends Component {
@@ -19,7 +21,35 @@ class Footer extends Component {
     return(
       <footer className="footer1">
         <div className="row">
-        <div className="col-sm-4"></div>
+        <div className="col-sm-4">
+          <div className="container socialMedia">
+
+          <div className="col-1 social-fb">
+            <a target="_blank" href="https://facebook.com/PauseClub/">
+            <img src={facebook} className="facebook"></img> 
+            </a>
+            </div>
+         
+
+          <div className="col-1 social-tw">
+            <a target="_blank" href="http://twitter.com/">
+            <img src={twitter} className="twitter"></img> 
+            </a>
+            </div>
+        
+         
+          <div className="col-1 social-in">
+            <a target="_blank" href="https://instagram.com/pause.bue/">
+            <img src={instagram} className="instagram"></img> 
+            </a>
+            </div>
+         
+
+          </div>
+				
+
+					
+					</div>
            <div className="col-sm-4">
 						 <a className="footerimg" href="#">
 						 <img id="footerImg" src= { Pause } className="img-fluid Pause"></img>
@@ -36,7 +66,7 @@ class Footer extends Component {
             <div className="row">
               
               
-                <div className="col-6 footercol">
+                <div className="col-3 footercol">
                   
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,7 +81,7 @@ class Footer extends Component {
                   </div>
                 
                 </div>
-                <div className="col-6 footercol">
+                <div className="col-3 footercol">
                     
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,9 +97,9 @@ class Footer extends Component {
                       
                        
                 </div>
-					</div>
-							<div className="row">
-							<div className="col-6 footercol">
+					
+						
+							<div className="col-3 footercol">
                   
                     <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,7 +112,7 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 footercol">
+                <div className="col-3 footercol">
                 
                   
                   <div className="dropdown">
@@ -100,9 +130,10 @@ class Footer extends Component {
                     
                 </div>
 							
+							
 							</div>
 							
-
+					
                 
             
         

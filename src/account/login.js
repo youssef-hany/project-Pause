@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+import EventNav from '../components/navBar/eventNav';
 import { login } from './functions';
 
 class Login extends Component{
@@ -17,10 +19,10 @@ class Login extends Component{
 	onChange(e){
 		this.setState({ [e.target.name]: e.target.value });
 	}
-	onSubmit(e){
+
+		onSubmit(e){
 		e.preventDefault();
 	
-
 const user = {
 	email :this.state.email,
 	password : this.state.password
@@ -30,13 +32,19 @@ const user = {
 	 if(res){
 		 this.props.history.push('/profile')
 	 }
- });
+ }).catch(err =>{
+	 console.log(err);
+	 this.props.history.push('/')
+ })
 		
 }
+	
+	
 
 render(){
 	return(
-		
+		<div className="sectionRegisterLogin">
+				<EventNav/>
 		<div className="container">
 			<div className="row">
 				<div className="col-md-6 mt-5 mx-auto">
@@ -55,14 +63,15 @@ render(){
 							<label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
 						</div>
 						<button type="submit" className="btn btn-primary">Submit</button>
+						
 					</form>
-					
+					<Link to="/register">Create New Account</Link>
 					
 				</div>
 
 			</div>
 		</div>
-		
+		</div>
 		
 		
 	);

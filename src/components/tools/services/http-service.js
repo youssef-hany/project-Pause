@@ -40,5 +40,20 @@ class HttpService {
 
 
 	}
+	
+	
+	getAnnouncement = () =>{
+		var anPromise = new Promise((resolve, reject) => {
+			
+				fetch('http://localhost:3004/users/announcement').then(response => {
+				resolve(response.json());
+			})
+			
+		
+		});
+		
+		return anPromise;
+		
+	}
 }
 export default HttpService;

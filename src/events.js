@@ -4,8 +4,6 @@ import MainCarousel from './components/carousel/carousel';
 import NavBar from './components/navBar/navBar';
 import pause from './components/img/PauseIMG.png';
 //services
-import HttpService from './components/tools/services/http-service'
-const http = new HttpService();
 
 window.scrollTo(0, 0);
 class events extends Component{

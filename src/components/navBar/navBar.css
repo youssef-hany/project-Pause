@@ -61,7 +61,7 @@ nav.navbar {
 	border: 0;
 	background-color: transparent;
 	border-color: transparent;
-
+	
 }
 
 
@@ -110,7 +110,7 @@ nav.navbar {
 		margin: auto;
 	}
 	.navImg{
-		margin-left: 55px;
+		margin-left: 60px;
 		max-width: 80px;
 	}
 	.PauseTnav {
